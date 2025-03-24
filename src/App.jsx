@@ -1,17 +1,19 @@
-import { useState } from 'react'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Result from "./pages/Result";
+import Navbar from "./components/Navbar";
 
-import './App.css'
-
-function App() {
-  const [count, setCount] = useState(0)
-
+const App = () => {
   return (
-    <>
-    
-    <h1 className='text-red-500'>hellow</h1>
-      
-    </>
-  )
-}
+    <div className="px-4 sm:px-10 md:px-14 lg:px-28 min-h-screen">
+      <Navbar/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/result" element={<Result />} />
+      </Routes>
+    </div>
+  );
+};
 
-export default App
+export default App;
