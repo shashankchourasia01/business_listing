@@ -6,7 +6,7 @@ import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
-    <div className="px-4 sm:px-10 md:px-14 lg:px-28 min-h-screen">
+    <div  >
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
@@ -17,3 +17,5 @@ const App = () => {
 };
 
 export default App;
+
+// className="px-4 sm:px-10 md:px-14 lg:px-28 min-h-screen"

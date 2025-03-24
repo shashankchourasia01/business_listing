@@ -6,7 +6,7 @@ import { FiMenu } from 'react-icons/fi';
 
 const Navbar = () => {
   return (
-    <div className="flex items-center justify-between">
+    <div className="flex items-center justify-between px-28">
         <Link to='/'  className="flex items-center">
       <img src={logo} alt="Punjabi Logo" className='w-10 sm:w-13 lg:w-16 rounded-full mt-2' />
       </Link>
