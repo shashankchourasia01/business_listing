@@ -9,9 +9,9 @@ const Home = () => {
   const [showForm, setShowForm] = useState(false);
 
   return (
-    <div className="relative h-screen">
+    <div className="relative h-screen z-[10]">
       {/* Navbar */}
-      <div className="flex items-center justify-between px-10 py-4 bg-white shadow-lg fixed w-full z-50">
+      <div className=" relative flex items-center justify-between px-10 py-4 bg-transparent w-full z-[50]">
         <Link to="/" className="flex items-center">
           <img src={logo} alt="Punjabi Logo" className="w-16 rounded-full" />
         </Link>
@@ -19,20 +19,21 @@ const Home = () => {
         {/* Nav Links */}
         <div className="hidden md:flex space-x-10">
           <button
-            onClick={() => setShowForm(true)}
-            className="text-gray-700 font-semibold hover:text-gray-900"
+            onClick={() => {
+              setShowForm(true)}}
+            className="text-white font-semibold hover:text-gray-900"
           >
             Add a Business
           </button>
           <Link
             to="/services"
-            className="text-gray-700 font-semibold hover:text-gray-900"
+            className="text-white font-semibold hover:text-gray-900"
           >
             Our Services
           </Link>
           <Link
             to="/blogs"
-            className="text-gray-700 font-semibold hover:text-gray-900"
+            className="text-white font-semibold hover:text-gray-900"
           >
             Blogs
           </Link>
@@ -43,7 +44,7 @@ const Home = () => {
       </div>
 
       {/* Background Image */}
-      <div className="absolute inset-0">
+      <div className="absolute inset-0 z-[-50]">
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <img
           src={home}
@@ -54,12 +55,12 @@ const Home = () => {
       </div>
 
       {/* Main Content */}
-      <div className="relative z-10 flex flex-col justify-center items-center text-white text-center h-full px-6 mb-20 mr-160">
-        <h1 className="text-5xl font-bold  ">
+      <div className="flex items-start relative bottom-[5rem] z-10 flex flex-col justify-center items-center text-white text-center h-full px-6  mr-160 ml-20">
+        <h1 className="text-5xl font-bold">
           List & Grow Your <span className="text-[#FCE130]">Business</span>
           <br />
-          with Punjabi Pages!
-        </h1>{" "}
+        </h1>
+        <h1 className="text-5xl font-bold mt-4">with Punjabi Pages!</h1>
         <br />
         <h4 className="mb-4">
           Join 1000+ Businesses & connect with <br /> customers today!
@@ -68,34 +69,34 @@ const Home = () => {
 
       {/* Registration Form (Only Visible When ShowForm is True) */}
       {showForm && (
-        <div className="fixed top-20 right-10 bg-white p-6 shadow-2xl rounded-lg w-96 z-50 mt-40 mr-20 gap-2">
+        <div className="fixed top-5 right-10 bg-white p-6 shadow-2xl rounded-lg w-96 z-50 mt-40 mr-20 gap-2">
           <h5 className="text-center text-lg font-bold mb-4 text-[#153A23]">
             Register Here
           </h5>
           <input
             type="text"
             placeholder="Name"
-            className="w-full p-1 border mb-3 shadow-2xl rounded-md"
+            className="w-full h-10 p-1 border mb-3 shadow-2xl rounded-md border-gray-300 placeholder:text-[12px] pl-5"
           />
           <input
             type="text"
             placeholder="Company / Business Name"
-            className="w-full p-1 border mb-3 shadow-2xl rounded-md"
+            className="w-full p-1 border mb-3 shadow-2xl rounded-md border-gray-300  h-10 placeholder:text-[12px] pl-5"
           />
           <input
             type="email"
             placeholder="Your Email"
-            className="w-full p-1 border mb-3 shadow-2xl rounded-md"
+            className="w-full p-1 border mb-3 shadow-2xl rounded-md border-gray-300  h-10 placeholder:text-[12px] pl-5"
           />
           <input
             type="text"
             placeholder="Mobile"
-            className="w-full p-1 border mb-3 shadow-2xl rounded-md"
+            className="w-full p-1 border mb-3 shadow-2xl rounded-md border-gray-300  h-10 placeholder:text-[12px] pl-5"
           />
           <input
             type="text"
             placeholder="Locality"
-            className="w-full p-1 border mb-3 shadow-2xl rounded-md"
+            className="w-full p-1 border mb-3 shadow-2xl rounded-md border-gray-300  h-10 placeholder:text-[12px] pl-5"
           />
           <div className="flex items-center mb-3">
             <input type="checkbox" className="mr-2" />
@@ -117,9 +118,9 @@ const Home = () => {
           </p>
         </div>
       )}
+   
 
-
-
+  <div className="absolute top-[79%] bg-green-800 w-[100%] h-[20%] border-green-800  opacity-100  mix-blend-overlay z-[-10] bg-gradient-to-r from-green-800 from-30% via-green-200 via-30% to-green-800 to-80% blur-2xl"></div>
 
 
 
@@ -127,7 +128,7 @@ const Home = () => {
 
 
 
-      <div class="container mx-auto px-6 py-12 mt-5">
+      <div class=" relative container mx-auto px-6 py-5  mt-5">
         {/* <!-- Progress Steps --> */}
         <div class="flex justify-center items-center space-x-10 md:space-x-20 mb-10">
           <div class="relative flex flex-col items-center">
