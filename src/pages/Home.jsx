@@ -3,6 +3,11 @@ import home from "../home_assets/Home image.jpeg";
 import logo from "../home_assets/punjabi logo.png";
 import menu from "../home_assets/Menu Logo.png";
 import man from "../home_assets/Man Image.png"
+// import green from '../home_assets/green bg.png'
+import people from '../home_assets/people.png'
+import location from '../home_assets/location icon.png'
+import arcti from '../home_assets/arcticons_boost.png'
+import email from '../home_assets/formkit_email.png'
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -180,6 +185,193 @@ const Home = () => {
           </div>
         </div>
       </div>
+
+
+      {/* List Business page  */}
+
+      <section className="bg-[#124929] text-white py-12 px-4 md:px-12">
+      {/* Heading Section */}
+      <div className=" max-w-3xl mx-auto ml-6">
+        <h1 className="text-3xl md:text-4xl font-bold ml-14 mt-14">
+          Why List Your <span className="text-yellow-400">Business</span> with Us?
+        </h1>
+        <p className="text-2xl text-gray-300 mt-12 ml-15 leading-relaxed">
+          Are you a Punjabi business owner in Australia? Increase your visibility and attract more
+          customers by listing your business on Punjabi Pages – the leading directory for
+          Punjabi-owned businesses across Australia.
+        </p>
+      </div>
+
+      {/* Features Section */}
+      <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-60 max-w-5xl mx-auto">
+
+
+         {/* Feature 1 */}
+    <div className="text-center relative">
+      <div className="relative w-88 h-88 mx-auto border-2 border-white rounded-full flex flex-col items-center justify-center overflow-hidden">
+        <div className="absolute -top-6 w-full h-full bg-[#124929]"></div> {/* Cutting the upper part */}
+        <img src={location} alt="Reach Local Customers" className="w-18 h-18 mb-4 relative z-10" />
+        <h3 className="text-lg font-semibold mt-2 relative z-10">Reach Local Customers</h3>
+        <p className="text-gray-300 text-sm relative z-10">
+          Get discovered by people searching <br />
+          for businesses like yours.
+        </p>
+      </div>
+    </div>
+
+    {/* Feature 2 */}
+    <div className="text-center relative">
+      <div className="relative w-88 h-88 mx-auto border-2 border-white rounded-full flex flex-col items-center justify-center overflow-hidden">
+        <div className="absolute -top-6 w-full h-full bg-[#124929]"></div> {/* Cutting the upper part */}
+        <img src={arcti} alt="Boost Online Presence" className="w-18 h-18 mb-4 relative z-10" />
+        <h3 className="text-lg font-semibold mt-2 relative z-10">Boost Online Presence</h3>
+        <p className="text-gray-300 text-sm relative z-10">
+          Improve your brand visibility and <br />
+          credibility. No hidden charges!
+        </p>
+      </div>
+    </div>
+
+    {/* Feature 3 */}
+    <div className="text-center relative">
+      <div className="relative w-88 h-88 mx-auto border-2 border-white rounded-full flex flex-col items-center justify-center overflow-hidden">
+        <div className="absolute -top-6 w-full h-full bg-[#124929]"></div> {/* Cutting the upper part */}
+        <img src={people} alt="Targeted Audience" className="w-18 h-18 mb-4 relative z-10" />
+        <h3 className="text-lg font-semibold mt-2 relative z-10">Targeted Audience</h3>
+        <p className="text-gray-300 text-sm relative z-10">
+          Connect with the Punjabi community <br />
+          looking for services they trust.
+        </p>
+      </div>
+    </div>
+      </div>
+    </section>
+
+
+    {/* Question page */}
+
+    <section className="bg-[#FFFDF5] py-16 px-6 md:px-12">
+      {/* Heading */}
+      <div className="text-center mb-12">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#124929] mt-18 mr-118">
+          Explore Answers to your Question!
+        </h2>
+      </div>
+
+      {/* FAQ Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-15 max-w-6xl mx-auto mt-25">
+        {/* FAQ Item 1 */}
+        <div className=" p-6  ">
+          <h2 className="text-3xl font-semibold text-[#124929]">
+            Q. Lorem ipsum dolor sit amet?
+          </h2>
+          <p className="text-gray-600 mt-2 text-xl">
+            Lorem ipsum dolor sit amet consectetur. Purus ultrices dignissim 
+            aliquam lectus quam sem eu eget nisi. Erat tortor urna in augue 
+            proin congue arcu.
+          </p>
+        </div>
+
+        {/* FAQ Item 2 */}
+        <div className=" p-6 ">
+          <h3 className="text-3xl font-semibold text-[#124929]">
+            Q. Lorem ipsum dolor sit amet?
+          </h3>
+          <p className="text-gray-600 mt-2 text-xl">
+            Lorem ipsum dolor sit amet consectetur. Purus ultrices dignissim 
+            aliquam lectus quam sem eu eget nisi. Erat tortor urna in augue 
+            proin congue arcu.
+          </p>
+        </div>
+
+        {/* FAQ Item 3 */}
+        <div className=" p-6  ">
+          <h3 className="text-3xl font-semibold text-[#124929]">
+            Q. Lorem ipsum dolor sit amet?
+          </h3>
+          <p className="text-gray-600 mt-2 text-xl">
+            Lorem ipsum dolor sit amet consectetur. Purus ultrices dignissim 
+            aliquam lectus quam sem eu eget nisi. Erat tortor urna in augue 
+            proin congue arcu.
+          </p>
+        </div>
+
+        {/* FAQ Item 4 */}
+        <div className=" p-6">
+          <h3 className="text-3xl font-semibold text-[#124929]">
+            Q. Lorem ipsum dolor sit amet?
+          </h3>
+          <p className="text-gray-600 mt-2 text-xl">
+            Lorem ipsum dolor sit amet consectetur. Purus ultrices dignissim 
+            aliquam lectus quam sem eu eget nisi. Erat tortor urna in augue 
+            proin congue arcu.
+          </p>
+        </div>
+      </div>
+    </section>
+
+
+
+    {/* Footer section */}
+
+
+    <footer className="bg-[#0D261A] text-white py-10 px-6 md:px-12">
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start md:items-center mr-40">
+        {/* Left Section */}
+        <div className="mb-8 md:mb-0 ">
+          <h2 className="text-4xl font-semibold mb-4 mt-20">Get Yourself Discovered !</h2>
+          <div className="grid grid-cols-3 gap-8 mt-25">
+            {/* Pages Section */}
+            <ul>
+              <li className="font-bold text-yellow-500 mb-2 text-2xl">Pages</li>
+              <li className="text-gray-300 text-xl">About</li>
+              <li className="text-gray-300 text-xl">Featured</li>
+              <li className="text-gray-300 text-xl">Explore</li>
+              <li className="text-gray-300 text-xl">How It Works</li>
+            </ul>
+
+            {/* Business Section */}
+            <ul>
+              <li className="font-bold text-yellow-500 mb-2 text-2xl">Business</li>
+              <li className="text-gray-300 text-xl">Add Business</li>
+              <li className="text-gray-300 text-xl">Explore</li>
+              <li className="text-gray-300 text-xl">Why Us</li>
+            </ul>
+
+            {/* Social Section */}
+            <ul>
+              <li className="font-bold text-yellow-500 mb-2 text-2xl">Social</li>
+              <li className="text-gray-300 text-xl">Facebook</li>
+              <li className="text-gray-300 text-xl">Instagram</li>
+              <li className="text-gray-300 text-xl">Twitter</li>
+              <li className="text-gray-300 text-xl">LinkedIn</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Right Section (Subscribe) */}
+        <div className="flex flex-col mb-65">
+          <h3 className="text-3xl font-semibold mb-4">Subscribe</h3>
+          <div className="relative">
+            <input
+              type="email"
+              placeholder="Email Address"
+              className="bg-white text-black py-2 px-4 w-110 h-16 rounded-2xl shadow-md focus:outline-none"
+            />
+            <button className="absolute right-1 top-1 bottom-1 bg-yellow-500 px-3 rounded-2xl w-15 flex items-center justify-center">
+               <img src={email} alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+
+      {/* Bottom Copyright Section */}
+      <div className="mt-20 border-t border-gray-600 pt-6 text-center text-gray-400 text-sm bg-black ">
+        Copyright © 2025, Punjabipages.in | All rights reserved.
+      </div>
+    </footer>
+
+
     </div>
   );
 };
