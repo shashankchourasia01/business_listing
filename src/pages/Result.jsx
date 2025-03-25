@@ -18,7 +18,7 @@ import { Link } from "react-router-dom";
 const Result = () => {
   return (
     <div className="relative h-screen z-[10]">
-      {/* Navbar */}
+      /*Navbar*/
       <div className=" relative flex items-center justify-between px-10 py-4 bg-transparent w-full z-[50]">
         <Link to="/" className="flex items-center">
           <img
