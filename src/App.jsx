@@ -6,13 +6,14 @@ import Result from "./pages/Result";
 
 const App = () => {
   return (
-    <div  >
+    <div>
       {/* <Navbar/> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/result" element={<Result />} />
       </Routes>
     </div>
+
   );
 };
 
