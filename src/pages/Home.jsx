@@ -10,8 +10,17 @@ import arcti from '../home_assets/arcticons_boost.png'
 import email from '../home_assets/formkit_email.png'
 import { Link } from "react-router-dom";
 
+import { useNavigate } from 'react-router-dom';
+
 const Home = () => {
   const [showForm, setShowForm] = useState(false);
+  const navigate = useNavigate(); 
+
+  //  Function to navigate to Result Page
+  const goToResultPage = () => {
+    navigate("/result");
+  };
+
 
   return (
     <div className="relative h-screen z-[10]">
@@ -112,7 +121,7 @@ const Home = () => {
               </a>
             </span>
           </div>
-          <button className="w-full bg-yellow-400 text-white p-2 font-bold">
+          <button onClick={goToResultPage} className="w-full bg-yellow-400 text-white p-2 font-bold">
             Submit
           </button>
           <p className="text-center mt-2">
